@@ -62,12 +62,16 @@ img {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
+}
+
+.page-header {
   border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
 }
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 76px;
 }
 
@@ -81,6 +85,10 @@ img {
   text-transform: uppercase;
 }
 
+.logo-header {
+  margin-right: 76px;
+}
+
 .logo-right {
   color: #2e2f42;
 }
@@ -91,6 +99,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .nav-section:hover,
@@ -146,7 +155,10 @@ img {
 }
 
 .cta {
-  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -173,6 +185,17 @@ img {
   letter-spacing: 0.02em;
   font-size: 20px;
   font-weight: 500;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .features-heading {
@@ -219,17 +242,18 @@ img {
   flex-direction: column;
   align-items: center;
   width: calc((1158 - 3 * 0) / 4);
+  border-radius: 0 0 4px 4px;
 }
 
 .member-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin: 32px 16px;
+  padding: 32px 0;
 }
 
 .member-name {
+  text-align: center;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -237,6 +261,7 @@ img {
 }
 
 .member-text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -267,6 +292,7 @@ img {
 }
 
 .portfolio-header {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -282,7 +308,6 @@ img {
 .port-card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   padding: 32px 16px;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -298,12 +323,16 @@ img {
   padding: 100px 0;
 }
 
+.lf {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .logo-footer {
   color: #f4f4fd;
 }
 
 .footer-text {
-  margin-top: 16px;
   max-width: 264px;
   line-height: 1.5;
   color: #f4f4fd;
