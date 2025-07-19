@@ -182,6 +182,7 @@ img {
 }
 
 .feature {
+  width: calc((100% - 72px) / 4); 
   letter-spacing: 0.02em;
   font-size: 20px;
   font-weight: 500;
@@ -202,7 +203,6 @@ img {
 }
 
 .features-heading {
-  width: calc((100% - 72px) / 4); 
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
